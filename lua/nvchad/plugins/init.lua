@@ -91,29 +91,29 @@ return {
     end,
   },
 
-  {
-    "neovim/nvim-lspconfig",
-    event = "User FilePost",
-    config = function()
-      require("nvchad.configs.lspconfig").defaults()
-    end,
-  },
+  -- {
+  --   "neovim/nvim-lspconfig",
+  --   event = "User FilePost",
+  --   config = function()
+  --     require("nvchad.configs.lspconfig").defaults()
+  --   end,
+  -- },
 
   -- load luasnips + cmp related in insert mode only
   {
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
     dependencies = {
-      {
-        -- snippet plugin
-        "L3MON4D3/LuaSnip",
-        dependencies = "rafamadriz/friendly-snippets",
-        opts = { history = true, updateevents = "TextChanged,TextChangedI" },
-        config = function(_, opts)
-          require("luasnip").config.set_config(opts)
-          require "nvchad.configs.luasnip"
-        end,
-      },
+      -- {
+      --   -- snippet plugin
+      --   "L3MON4D3/LuaSnip",
+      --   dependencies = "rafamadriz/friendly-snippets",
+      --   opts = { history = true, updateevents = "TextChanged,TextChangedI" },
+      --   config = function(_, opts)
+      --     require("luasnip").config.set_config(opts)
+      --     require "nvchad.configs.luasnip"
+      --   end,
+      -- },
 
       -- autopairing of (){}[] etc
       {
