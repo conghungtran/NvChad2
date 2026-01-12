@@ -140,9 +140,9 @@ return {
        "https://codeberg.org/FelipeLema/cmp-async-path.git",
       },
     },
-    opts = function()
-      return require "nvchad.configs.cmp"
-    end,
+    -- opts = function()
+    --   return require "nvchad.configs.cmp"
+    -- end,
   },
 
   {
